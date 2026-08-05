@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Roadmap Model Documentation
-email: communications@theicct.org
+title: Air Passenger Flow Tensor Documentation
+email: s.zheng@theicct.org
 description: >- # this means to ignore newlines until "baseurl:"
   The International Council on Clean Transportation is an independent
   nonprofit organization founded to provide first-rate, unbiased research
@@ -27,7 +27,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Our mission is to improve the environmental performance and energy
   efficiency of road, marine, and air transportation, in order to benefit
   public health and mitigate climate change.
-baseurl: "/roadmap-doc" # the subpath of your site, e.g. /blog
+baseurl: "/air-passenger-flow-doc" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: theicct
 github_username:  theicct
