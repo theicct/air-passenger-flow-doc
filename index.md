@@ -3,20 +3,20 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Roadmap Model Documentation
+title: ICCT Passenger Flow Tensor Documentation
 ---
 
-The ICCT’s Roadmap model is a global transportation emissions model covering all on-road vehicle activity in over 190 countries. The Roadmap model is intended to help policymakers worldwide to identify and understand trends in the transportation sector, assess emission impacts of different policy options, and frame plans to effectively reduce emissions of both greenhouse gases (GHGs) and local air pollutants. It is designed to allow transparent, customizable estimation of transportation emissions for a broad range of policy cases.
+The ICCT Passenger Flow Tensor (T_ijk) is a calibrated 12×12×12 array of modelled annual air passenger flows at the granularity of the 12 RICE (Regional Integrated Climate–Economy) model regions. Each entry T[i, j, k] represents travellers originating in region i who transit through region j en route to destination k. The tensor is built as the missing calibration input for a Walrasian equilibrium model of aviation tax incidence developed at the Potsdam Institute for Climate Impact Research (PIK), in collaboration with the ICCT.
 
-Roadmap was first developed in 2019 by Caleb Braun, Lingzhi Jin, and Josh Miller. 
+The T_ijk model synthesises two data sources — the ICCT segment-level emissions inventory and the Llano et al. (2023) bilateral tourism panel — via a two-stage multinomial logit routing model, and delivers a 2019-baseline tensor totalling 3.4 billion origin-destination passenger flows.
 
 ## Versions
 
-Roadmap is under continuing development. Documentation of all versions since v1.5 can be found here.
+The T_ijk model is under continuing development. Documentation of all versions is listed below.
 
 {% assign pages = site.pages | sort: "sortable_version" | reverse %}
 {% for page in pages %}
-{% if page.dir contains '/versions/' and page.title contains 'Roadmap v'%}
+{% if page.dir contains '/versions/' and page.title contains 'T_ijk' %}
 <li><a class="page-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a></li>
 {% endif %}
 {% endfor %}
