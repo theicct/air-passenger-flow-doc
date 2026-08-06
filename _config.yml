@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: ICCT Passenger Flow Tensor Documentation
-email: communications@theicct.org
+title: ICCT Air Passenger Flow Tensor Documentation
+email: s.zheng@theicct.org
 description: >- # this means to ignore newlines until "baseurl:"
   The International Council on Clean Transportation is an independent
   nonprofit organization founded to provide first-rate, unbiased research
